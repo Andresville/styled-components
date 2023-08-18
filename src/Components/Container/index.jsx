@@ -3,9 +3,10 @@ import styled from "styled-components";
 import Title from "../Title";
 import Account from "../Account";
 import { fondoClaro } from "../UI/variables";
+import Lista from "../Lista";
 
 const StyledContainer = styled.div`
-  background-color: ${fondoClaro};
+  background-color: ${({theme})=> theme.body};
   min-height: 90vh; 
   padding: 0px 15vw;
 `
@@ -26,6 +27,7 @@ const Container = () => {
       <Title>Smart Bank</Title>
       <StyledContent>
         <Account />
+        <Lista/>
       </StyledContent>
     </StyledContainer>
   );
